@@ -1,0 +1,123 @@
+
+html { box-sizing: border-box; }
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/*Global Styles*/
+body {
+    color: black;
+    font-family: "Helvetica", arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+a {
+    color: rgb( 93, 175, 144);
+     filter: all 3px ease;
+    -webkit-filter: all 3px ease;
+}
+
+a:hover {
+    color: rgb(163, 66, 76);
+}
+/*Typography*/
+
+/*Header+Navigation*/
+header img {
+    float: center;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    float: left;
+}
+
+
+header nav {
+    float: right;
+}
+
+
+nav ul {
+     list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: turquoise;
+}
+
+nav ul li a.active {
+    color: purple;
+}
+
+.container .back {
+    text-align:right;
+}
+
+/*Page Layout*/
+
+.bio {
+    max-width: 75%;
+    padding-left: 25px;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+ul.thumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.thumbnails li.thumb {
+    margin: 15px;
+    width: 240px;
+}
+
+li.thumb img {
+    max-width: 100%;
+}
+
+li.thumb a img {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+li.thumb a:hover img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+p .caption {
+    font-size: 12px;
+}
+/*Media Queries*/
+
+.back {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
